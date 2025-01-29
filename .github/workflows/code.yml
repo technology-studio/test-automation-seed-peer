@@ -8,15 +8,12 @@ on:
       - synchronize
       - ready_for_review
 
-env:
-  NPM_PRIVATE_REGISTRY_TOKEN: ${{ secrets.NPM_PRIVATE_REGISTRY_TOKEN }}
-
 jobs:
   code-quality:
     name: "Code quality"
-    uses: technology-studio/github-workflows-private/.github/workflows/_code-quality.yml@main
+    uses: technology-studio/github-workflows/.github/workflows/_code-quality.yml@main
     secrets: inherit
   type-check:
     name: "Type check"
-    uses: technology-studio/github-workflows-private/.github/workflows/_type-check.yml@main
+    uses: technology-studio/github-workflows/.github/workflows/_type-check.yml@main
     secrets: inherit

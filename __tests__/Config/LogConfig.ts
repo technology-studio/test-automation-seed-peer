@@ -22,6 +22,7 @@ configManager.update({
     //   nodeEnvironmentList: ['development'],
     // },
   },
+  // eslint-disable-next-line @typescript-eslint/no-magic-numbers -- JSON string indentation - 2 spaces
   payloadProcessor: () => (payload: Record<string, unknown>) => JSON.stringify(payload, null, 2),
   defaultLevelForNodeEnvironmentMap: {
     production: Level.ERROR,

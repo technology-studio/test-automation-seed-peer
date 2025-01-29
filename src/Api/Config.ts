@@ -6,9 +6,7 @@
 
 import { ConfigManager } from '@txo/config-manager'
 
-export type SeedExecutor<ASSETS> = {
-  execute: (baseKey: string) => PromiseLike<ASSETS>,
-}
+import type { SeedExecutor } from '../Model'
 
 export type Config = {
   getRidge: () => string,

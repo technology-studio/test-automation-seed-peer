@@ -1,0 +1,18 @@
+name: 'Test'
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+
+env:
+  NPM_PRIVATE_REGISTRY_TOKEN: ${{ secrets.NPM_PRIVATE_REGISTRY_TOKEN }}
+
+jobs:
+  unit:
+    name: 'Unit test'
+    uses: technology-studio/github-workflows-private/.github/workflows/_unit-test.yml@main
+    secrets: inherit

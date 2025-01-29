@@ -1,0 +1,19 @@
+[
+  "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-unsafe-type-assertion",
+  "eslint-comments/require-description",
+  "@typescript-eslint/no-empty-object-type",
+  "max-lines",
+  "max-nested-callbacks",
+  "@typescript-eslint/prefer-destructuring",
+  "@stylistic/operator-linebreak",
+  "@stylistic/space-before-function-paren",
+  "@stylistic/type-generic-spacing",
+  "@typescript-eslint/no-unnecessary-condition",
+  "@typescript-eslint/no-for-in-array",
+  "guard-for-in",
+  "@stylistic/arrow-parens",
+  "@typescript-eslint/init-declarations",
+  "@typescript-eslint/no-import-type-side-effects",
+  "@typescript-eslint/consistent-type-exports"
+]

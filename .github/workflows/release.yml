@@ -1,0 +1,15 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NPM_PRIVATE_REGISTRY_TOKEN: ${{ secrets.NPM_PRIVATE_REGISTRY_TOKEN }}
+
+jobs:
+  release:
+    name: 'Release'
+    uses: technology-studio/github-workflows-private/.github/workflows/_release.yml@main
+    secrets: inherit

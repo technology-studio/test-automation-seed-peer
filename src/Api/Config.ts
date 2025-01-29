@@ -5,7 +5,7 @@
 **/
 
 import { ConfigManager } from '@txo/config-manager'
-// import type { SeedExecutor } from '@txo/test-automation-seed'
+
 export type SeedExecutor<ASSETS> = {
   execute: (baseKey: string) => PromiseLike<ASSETS>,
 }
